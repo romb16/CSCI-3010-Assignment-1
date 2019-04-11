@@ -139,7 +139,7 @@ int main()
 		}
 		
 		// Request update
-		int sendReqU = send(mySocket, (char*)&UPDATE, sizeof(int) + 1, 0);
+		int sendReqU = send(mySocket, (char*)&UPDATE, sizeof(int), 0);
 
 		if (sendReqU == SOCKET_ERROR)
 		{
