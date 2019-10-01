@@ -83,11 +83,11 @@ int main()
 
 	// Start listening for incoming connections
 	if ( listen ( listenSocket, 1 ) == SOCKET_ERROR )
-    {
+    	{
         cerr << "ERROR: Problem with listening on socket\n";
         cleanup( listenSocket );
         return 1;
-    }
+    	}
 
 	// Get server version of data file
 	localVersion = getLocalVersion();
@@ -169,7 +169,7 @@ int main()
 		requestHandled++;
 
 		cout << "Total request handled : " << requestHandled << "\n";
-}
+	}
 
 	return 0;
 }
